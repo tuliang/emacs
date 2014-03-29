@@ -1,3 +1,9 @@
+;; auto complete
+(add-to-list 'load-path "~/.emacs.d/plugins/")
+(require 'auto-complete-config)
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/plugins//ac-dict")
+(ac-config-default)
+
 ;; 显示行号
 (global-linum-mode +1)
 
@@ -22,3 +28,5 @@
                (set-buffer-modified-p nil)
                (message "File '%s' successfully renamed to '%s'" name (file-name-nondirectory new-name))))))))
 (global-set-key (kbd "C-c r") 'rename-this-buffer-and-file)
+
+
