@@ -4,6 +4,9 @@
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/plugins//ac-dict")
 (ac-config-default)
 
+;; 以 y/n代表 yes/no
+(fset 'yes-or-no-p 'y-or-n-p) 
+
 ;; 显示行号
 (global-linum-mode +1)
 
